@@ -9,11 +9,11 @@ import Link from 'next/link';
 
 type Color = {
     hex: string;
-  }
-  
-  type Asset = {
+}
+
+type Asset = {
     url: string;
-  }
+}
 
 type Carousel = {
     id: string;
@@ -23,10 +23,10 @@ type Carousel = {
     titleText: string;
     carSlug: string;
     background: Asset
-  }
+}
 
-const VideoCarousel = (props: {carousels: Carousel[]}) => {
-    const {carousels} = props;
+const VideoCarousel = (props: { carousels: Carousel[] }) => {
+    const { carousels } = props;
     return <Carousel>
         {carousels.map(caroursel =>
             <Carousel.Item key={caroursel.id}>
